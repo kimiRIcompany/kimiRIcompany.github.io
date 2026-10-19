@@ -3,75 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kimi-Shop</title>
+    <title>miRI-shop | miRI-Glue</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .product {
-            border-bottom: 1px solid #eee;
-            padding: 20px 0;
-        }
-        .product:last-child {
-            border-bottom: none;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 14px;
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #8e44ad; color: white; text-align: center; padding: 40px 20px; }
+        h1 { margin: 0; font-size: 38px; letter-spacing: 1px; }
+        .container { max-width: 700px; margin: 30px auto; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .product-title { color: #8e44ad; font-size: 28px; margin-top: 0; text-align: center; }
+        .highlight { font-weight: bold; color: #2c3e50; font-size: 18px; margin-bottom: 15px; display: block; text-align: center;}
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 16px; }
+        li::before { content: '✅'; position: absolute; left: 0; top: 0; }
+        .glue-info { background-color: #fdf2e9; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #e67e22; }
+        footer { text-align: center; padding: 20px; color: #777; font-size: 14px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Kimi-Shop</h1>
-        <p>Унікальні речі ручної роботи</p>
+        <h1>miRI-shop</h1>
+        <p>Корисні побутові речі для вашого дому</p>
     </header>
 
     <div class="container">
-        <h2>Наші товари</h2>
-        
-        <div class="product">
-            <h3>Полігональні дерев'яні панно</h3>
-            <p>Стильний та сучасний декор для вашого дому. Зроблено з натурального дерева.</p>
-        </div>
+        <div class="card">
+            <h2 class="product-title">Термопістолет miRI-Glue</h2>
+            
+            <!-- ТУТ БУДЕ ФОТО. Коли завантажиш фото, прибери символи <!-- та --> і напиши назву файлу замість glue.jpg -->
+            <!-- <img src="glue.jpg" width="100%" style="border-radius: 10px; margin-bottom: 20px;"> -->
 
-        <div class="product">
-            <h3>Побутові речі та декор</h3>
-            <p>Тут незабаром з'являться інші корисні та красиві речі для вашого затишку.</p>
+            <span class="highlight">Наш miRI-Glue — найкращий серед усіх! Ось чому:</span>
+            
+            <ul>
+                <li><b>Блискавичний нагрів:</b> готовий до роботи за лічені секунди.</li>
+                <li><b>Абсолютна безпека:</b> продумана конструкція, яка не допустить катастрофи.</li>
+                <li><b>Мега-зручність:</b> на корпусі є спеціальні кнопки для легкого налаштування.</li>
+            </ul>
+
+            <div class="glue-info">
+                <b>А що щодо самого клею?</b><br>
+                Він неймовірно міцний, мега-швидко і надійно склеює будь-які матеріали. А ще — він дуже приємний у використанні!
+            </div>
         </div>
     </div>
 
     <footer>
-        &copy; 2024 Kimi-Shop. Зроблено з любов'ю.
+        &copy; 2024 miRI-shop. Якість, яку ви відчуєте.
     </footer>
 
-</body> 
+</body>
 </html>
