@@ -3,53 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miRI-shop | miRI-Glue</title>
+    <title>miRI-Glue | miRI-shop</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 0; line-height: 1.6; }
-        header { background-color: #8e44ad; color: white; text-align: center; padding: 40px 20px; }
-        h1 { margin: 0; font-size: 38px; letter-spacing: 1px; }
-        .container { max-width: 700px; margin: 30px auto; padding: 20px; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .product-title { color: #8e44ad; font-size: 28px; margin-top: 0; text-align: center; }
-        .highlight { font-weight: bold; color: #2c3e50; font-size: 18px; margin-bottom: 15px; display: block; text-align: center;}
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 16px; }
-        li::before { content: '✅'; position: absolute; left: 0; top: 0; }
-        .glue-info { background-color: #fdf2e9; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #e67e22; }
-        footer { text-align: center; padding: 20px; color: #777; font-size: 14px; margin-top: 20px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', 'Segoe UI', sans-serif; background-color: #121212; color: #e0e0e0; line-height: 1.5; }
+        
+        /* Шапка сайту */
+        header { background: linear-gradient(135deg, #1e1e1e, #2a2a2a); text-align: center; padding: 50px 20px; border-bottom: 2px solid #8e44ad; }
+        header h1 { font-size: 36px; letter-spacing: 2px; color: #fff; text-transform: uppercase; }
+        header p { color: #a0a0a0; margin-top: 10px; font-size: 16px; }
+
+        /* Картка товару */
+        .container { max-width: 500px; margin: -20px auto 40px; padding: 0 20px; }
+        .card { background: #1e1e1e; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        
+        /* Фото */
+        .card img { width: 100%; height: 300px; object-fit: cover; }
+        
+        /* Контент */
+        .content { padding: 25px; }
+        .product-title { font-size: 26px; color: #fff; margin-bottom: 5px; }
+        .price { font-size: 22px; font-weight: bold; color: #2ecc71; margin-bottom: 20px; display: block; }
+        
+        /* Блоки з перевагами */
+        .features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+        .feature { background: #2a2a2a; padding: 12px 15px; border-radius: 10px; font-size: 14px; display: flex; align-items: center; }
+        .feature span { color: #8e44ad; font-size: 18px; margin-right: 10px; }
+
+        /* Блок про клей */
+        .glue-info { background: rgba(142, 68, 173, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #8e44ad; font-size: 14px; color: #ccc; }
+        .glue-info b { color: #fff; display: block; margin-bottom: 5px; }
+
+        footer { text-align: center; padding: 20px; color: #666; font-size: 12px; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>miRI-shop</h1>
-        <p>Корисні побутові речі для вашого дому</p>
+        <p>Стильні речі для твого дому</p>
     </header>
 
     <div class="container">
         <div class="card">
-            <h2 class="product-title">Термопістолет miRI-Glue</h2>
-            
-            
-            <img src="https://pin.it/4vGVgSQet" width="100%" style="border-radius: 10px; margin-bottom: 20px;">
+            <!-- Фото -->
+            <img src="https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&w=800&auto=format&fit=crop" alt="miRI-Glue">
 
-            <span class="highlight">Наш miRI-Glue — найкращий серед усіх! Ось чому:</span>
-            
-            <ul>
-                <li><b>Блискавичний нагрів:</b> готовий до роботи за лічені секунди.</li>
-                <li><b>Абсолютна безпека:</b> продумана конструкція, яка не допустить катастрофи.</li>
-                <li><b>Мега-зручність:</b> на корпусі є спеціальні кнопки для легкого налаштування.</li>
-            </ul>
+            <div class="content">
+                <h2 class="product-title">Термопістолет miRI-Glue</h2>
+                <span class="price">349 грн</span>
+                
+                <div class="features">
+                    <div class="feature"><span>⚡</span> Нагрів за лічені секунди</div>
+                    <div class="feature"><span>🛡️</span> Безпечний та надійний корпус</div>
+                    <div class="feature"><span>🎛️</span> Зручні кнопки налаштування</div>
+                </div>
 
-            <div class="glue-info">
-                <b>А що щодо самого клею?</b><br>
-                Він неймовірно міцний, мега-швидко і надійно склеює будь-які матеріали. А ще — він дуже приємний у використанні!
+                <div class="glue-info">
+                    <b>Про клей:</b>
+                    Міцний, швидкий та приємний у використанні. Тримає намертво!
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        &copy; 2024 miRI-shop. Якість, яку ви відчуєте.
+        © 2024 miRI-shop
     </footer>
 
 </body>
